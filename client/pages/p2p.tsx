@@ -103,6 +103,7 @@ const Home: NextPage = () => {
       setCalledToUserId(user.socketId)
     }
   }, [])
+  // console.log(users)
 
   const handleIncommingCall = React.useCallback(async (data: IncomingCall) => {
     if (data) {
@@ -472,7 +473,7 @@ const Home: NextPage = () => {
 
   if (!currentUser) {
     return (
-      <div className="min-h-screen justify-center bg-[#18181b] p-5">
+      <div className="min-h-screen justify-center bg-white p-5">
         <Navbar />
         <div className="flex min-h-[80vh] w-full items-center justify-center text-white">
           <GoogleLoginButton />

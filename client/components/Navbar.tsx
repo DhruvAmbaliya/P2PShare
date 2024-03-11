@@ -21,7 +21,9 @@ const Navbar: React.FC<NavbarProps> = (props) => {
   const { currentUser } = useFirebase() as FirebaseContext
 
   return (
+    // <nav className="flex items-center justify-between bg-black">
     <nav className="flex items-center justify-between">
+
       <Typography
         variant="h5"
         className="flex items-center align-middle font-sans font-bold text-white antialiased"
