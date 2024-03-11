@@ -103,7 +103,7 @@ const Home: NextPage = () => {
       setCalledToUserId(user.socketId)
     }
   }, [])
-  // console.log(users)
+  console.log(users)
 
   const handleIncommingCall = React.useCallback(async (data: IncomingCall) => {
     if (data) {
